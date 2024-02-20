@@ -128,3 +128,9 @@ margin:10px 0;
     font-size: 14px;
     font-weight: 700;
 }
+.tab-contents {
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}

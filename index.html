@@ -48,12 +48,12 @@
                         atque porro praesentium veritatis.
                     </p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
                     <!--content For the skills part below-->
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>Web Development</span> <br>Quality Personal and Business Websites Development
                             </li>
@@ -63,23 +63,28 @@
                     </div>
 
                     <!--content For the Experience part below-->
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="experience">
                         <ul>
                             <li><span>May 2023-February 2024</span> <br> Business Development Manager at Ngeni LABs LTD
                             </li>
-                            <li><span>2021-Current</span> <br>Technical Freelance Writer at Writerbay, Coursehero, and
-                                EssayPro</li>
-                            <li><span>Technical Writing</span> <br> Writing all types of papers and presentations</li>
+                            <li><span>November 2021-April 2023</span> <br>Technical Freelance Writer at Writerbay,
+                                Coursehero, and EssayPro</li>
+                            <li><span>May 2021 - Oct 2021</span> <br> I.T. Support Officer-Intern at Makueni County
+                                Government, Wote, Kenya</li>
                         </ul>
                     </div>
 
                     <!--content For the Education part below-->
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>Web Development</span> <br> Quality Personal and Business Websites Development
-                            </li>
-                            <li><span>UI/UX</span> <br> Designing Web/App interfaces</li>
-                            <li><span>Technical Writing</span> <br> Writing all types of papers and presentations</li>
+                            <li><span>Sep 2017 - Dec 2021</span> <br> Bachelor's Degree in Computer Science, from Rongo
+                                University,
+                                Attained Second Class Honors, Upper Division.</li>
+                            <li><span>2013 - 2016</span> <br> Attained the Kenya Certificate of Secondary Education
+                                (KCSE), from Kitheuni Secondary School</li>
+                            <li><span>2004 - 2012</span> <br> Attained the Kenya Certificate of Primary Education
+                                (KCPE), from Mwambathaana Primary
+                                School,</li>
                         </ul>
                     </div>
                 </div>
@@ -102,6 +107,24 @@
                 style="width: 78px; height: 22px; padding: 0px; margin: 0px;" /></a>
 
     </footer>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+    </script>
 </body>
 
 </html>
