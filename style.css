@@ -145,3 +145,33 @@ margin:10px 0;
     grid-gap:40px;
     margin-top: 50px;
 }
+
+/*Styling the services list*/
+.services-list div{
+    background: #262626;
+    padding:40px;
+    font-size:13px;
+    font-weight: 300;
+    border-radius: 15px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+ background: #ef668f;  
+  transform: translateY(-10px);
+}
