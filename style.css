@@ -289,3 +289,121 @@ transform: scale(1.1);
 }
 
 /* End of Styling the See More button which i took from cssbuttons.app website*/
+
+/* Now styling my contact-me part below*/
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+
+}
+/*styling the icons*/
+.contact-left p i{
+    color:#00fff7;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.social-icons a{ 
+    margin-right: 15px;
+    font-size: 30px;
+    color: #65d0e1;
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color:#1212f4;
+    transform: translateY(-5px);
+
+}
+/*styling the download cv button, still using the previous effects and stylings of See More Samples part*/
+/*button from cssbuttons.app*/
+.bn5 {
+    margin-top: 20px;
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #0a814f;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.bn5:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowingbn5 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowingbn5 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.bn5:active {
+  color: #000;
+}
+
+.bn5:active:after {
+  background: transparent;
+}
+
+.bn5:hover:before {
+  opacity: 1;
+}
+
+.bn5:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #191919;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+/*End of download button from cssbuttons.app*/
