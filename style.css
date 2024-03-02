@@ -4,6 +4,10 @@
     font-family: 'poppins', sans-serif, Arial, Helvetica;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+} /*to make the website scroll smoothly when someone clicks*/
+
 body{
     background: #000000;
     color: #ffffff;
@@ -303,6 +307,17 @@ transform: scale(1.1);
     margin-top: 30px;
 
 }
+.contact-right p{
+    background: #10d9c8;
+    font-weight: 600;
+    color: #000;
+}
+
+.connectWithMe{
+    background: #10d9c8;
+    font-weight: 600;
+    color: #000;
+}
 /*styling the icons*/
 .contact-left p i{
     color:#00fff7;
@@ -435,6 +450,7 @@ form .submitbtn{
    max-width: fit-content;
 }
 
+
 /*styling the copyright section starts below*/
 .copyright{
     width: 100%;
@@ -499,4 +515,26 @@ nav .fa-solid{
     .about-col-2{
         font-size: 14px;
     }
+    .tab-links{
+        font-size: 16px;
+        margin-right:20px;
+
+    }
+    .contact-left, .contact-right{
+        flex-basis:100%;
+    }
+    .contact-right p{
+        background: #10d9c8;
+        font-weight: 600;
+        color: #000;
+        margin-top: 25px;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+}
+#msg{
+    color:green;
+    margin-top: 5px;
+    display: block;
 }

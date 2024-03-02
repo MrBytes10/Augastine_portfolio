@@ -15,11 +15,11 @@
             <nav>
                 <img src="images/myLogo4.png" class="logo" alt="Augastine's logo">
                 <ul id="sidemenu">
-                    <li> <a href="#">Home</a> </li>
-                    <li> <a href="#">About</a> </li>
-                    <li> <a href="#">Services</a> </li>
-                    <li> <a href="#">Portfolio</a> </li>
-                    <li> <a href="#">Contact</a> </li>
+                    <li> <a href="#header">Home</a> </li>
+                    <li> <a href="#about">About</a> </li>
+                    <li> <a href="#services">Services</a> </li>
+                    <li> <a href="#portfolio">Portfolio</a> </li>
+                    <li> <a href="#contact">Contact</a> </li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i> <!--- an icon for Closing---->
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i> <!--a Icon for menu-->
@@ -148,7 +148,7 @@
                 <!-- service 5 starts with the div below-->
                 <div>
                     <i class="fa-brands fa-space-awesome"></i>
-                    <h2>AI Adoption Consultant</h2>
+                    <h2>AI Adoption Specialist</h2>
                     <p>
                         The key focus is on leveraging expertise in current AI tools and solutions to analyze a
                         business' needs and processes in order to recommend where and how AI can be adopted or
@@ -167,7 +167,7 @@
                 <!-- service 6 starts with the div below-->
                 <div>
                     <i class="fa-solid fa-magnifying-glass-chart"></i>
-                    <h2>Custom Automation & Analytics</h2>
+                    <h2>Automation & Data Analytics</h2>
                     <p>
                         I develop Python applications for automation, data analysis, machine learning models, scraping
                         data, building APIs, and more. Handles coding projects end-to-end.
@@ -243,6 +243,8 @@
                     <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fa-regular fa-envelope"></i>augastinendeti@gmail.com</p>
                     <p><i class="fa-solid fa-square-phone-flip"></i>+254 742125032</p>
+
+                    <p class="connectWithMe">Connect with me on all platforms below:</p>
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/augastine-ndeti-290230175?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BwZ6ut2hySHGJYPyJsjdf2A%3D%3D"
                             target="blank">
@@ -257,6 +259,8 @@
                                 class="fa-brands fa-square-github"></i></a>
                         <a href="https://discordapp.com/users/961452033288843284" target="_blank"><i
                                 class="fa-brands fa-discord"></i> </a>
+                        <a href="https://www.tiktok.com/@mr.bytes10?is_from_webapp=1&sender_device=pc"
+                            target="_blank"><i class="fa-brands fa-tiktok"></i></a>
                     </div>
                     <a href="images/@Augastine Ndeti Resume latest.pdf" download class="bn5"> <i
                             class="fa-solid fa-cloud-arrow-down"></i>Download my Resume/CV</a>
@@ -264,12 +268,15 @@
 
                 <div class="contact-right">
                     <!--Here we shall have the are where a client can reach out to me from the website-->
-                    <form>
+                    <p>You can also send me a message through filling this form:</p>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="enter your email" required>
                         <textarea name="message" rows="9" placeholder="Type your message here"></textarea>
                         <button type="submit" class="submitbtn">Submit</button>
                     </form>
+                    <!--we will display one message below, usinf this code below...-->
+                    <span id="msg"></span>
                 </div>
 
             </div>
@@ -306,7 +313,6 @@
     <!--
     <button type="button" onclick="alert(Date())"> Click here to display Date and Time now </button>
     -->
-    */
     <!--This is a button which displays current date and time-->
 
 
@@ -329,6 +335,7 @@
 
         }
     </script>
+
     <script>
         var sidemenu = document.getElementById("sidemenu");
         function openmenu() {
@@ -347,8 +354,28 @@
         return value; // returning values with content
         });
         console.log(newSplitArr);
-        }
-        */
+        } 
+    */
+    </script>
+    <!--contact for javascript starts below-->
+    <!--Got some help from this github account on the code below: https://github.com/jamiewilson/form-to-google-sheets,, also he gave ideas and script to enter in google sheets extensions web app feature-->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby4CHrquQRS7z9BRvh4DNbESzmaLhci5tkVKnEoPEK8chqpj6gXFBaAFHsS_LOCdKhQ5A/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent Successfully."
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
     </script>
 </body>
 
