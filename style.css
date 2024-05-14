@@ -63,11 +63,19 @@ width: 100%;
 
 }
 .header-text{
-   margin-top: 20%;
+   margin-top: 15%;
    font-size: 30px; 
 }
+.header-text p{
+    font-size: 40px;
+    margin-top: 20px;
+    font-weight:700px;
+    color: #19b4c2;
+    margin-top: 5%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 .header-text h1{
-    font-size: 60px;
+    font-size: 40px;
     margin-top: 20px;
 }
 .header-text h1 span{
