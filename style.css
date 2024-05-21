@@ -189,8 +189,8 @@ margin:10px 0;
   transform: translateY(-10px);
 }
 
-/* styling the div id 'portfolio' which has my work samples;;;the styling starts below*/
-#portfolio{
+/* styling the div id 'My_Projects' which has my work samples;;;the styling starts below*/
+#My_Projects{
     padding: 50px 0;  /* 50px from top&bottom and 0 left&right*/
 }
 /*styling the work-list div class*/
