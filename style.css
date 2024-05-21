@@ -150,7 +150,7 @@ margin:10px 0;
 
 /* ....... Styling the Services section starts below.........*/
 #services{
-    padding: 30px 0; /*30pixels top and bottom, then left and right is 0*/
+    padding: 10px 0; /*30pixels top and bottom, then left and right is 0*/
 }
 .services-list{
     display:grid;
@@ -272,7 +272,7 @@ transform: scale(1.1);
   border: none;
   background-size: 300% 100%;
   border-radius: 50px;
-  moz-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
@@ -280,7 +280,7 @@ transform: scale(1.1);
 
 .bn632-hover:hover {
   background-position: 100% 0;
-  moz-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
