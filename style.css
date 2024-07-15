@@ -394,6 +394,12 @@ transform: scale(1.1);
   transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
 }
+.bn5 i {
+    margin-right: 10px;
+    font-size: 30;
+    font-style:initial;
+    color: rgba(27, 44, 27, 0.966);
+}
 
 @keyframes glowingbn5 {
   0% {
