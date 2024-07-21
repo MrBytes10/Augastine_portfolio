@@ -30,15 +30,18 @@ nav{
     align-items: center;
     justify-content:space-between;
     flex-wrap: wrap;
-
+     /* margin-left: 240px; ,,,to move it towards the center*/
 }
 .logo{
-    width: 140px;
+    width: 50px;
+    height: 00px;
+    object-fit: cover;
 }
 nav ul li{
     display: inline-block; 
    list-style: none;
    margin: 10px 20px;
+   align-items: center;
 
 }
 nav ul li a{
@@ -66,20 +69,21 @@ width: 100%;
    margin-top: 15%;
    font-size: 30px; 
 }
-.header-text p{
-    font-size: 40px;
-    margin-top: 20px;
-    font-weight:700px;
-    color: #19b4c2;
-    margin-top: 5%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
 .header-text h1{
     font-size: 40px;
     margin-top: 20px;
+    font-weight:700;
+    color: #1ccfa5;
+    margin-top: 5%;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    align-items: center;
 }
-.header-text h1 span{
-color: #19b4c2;
+.header-text p{
+    font-size: 40px;
+    margin-top: 20px;
+}
+.header-text p span{
+color: #1ccfa5;
 }
 /*....about............*/
 #about{
@@ -110,6 +114,10 @@ color: #19b4c2;
 .tab-titles{
     display: flex;
     margin: 20px 0 20px;
+    color: #1ccfa5;
+    font-weight: 700;
+    background-color: black;
+    font-family:'Times New Roman', Times, serif, monospace;
 }
 .tab-links{
     margin-right: 50px;
@@ -117,6 +125,7 @@ color: #19b4c2;
     font-weight: 500;
     cursor:pointer;
     position: relative;
+    background-color: rgb(61, 53, 53);
 
 }
 .tab-links::after{
@@ -359,7 +368,7 @@ transform: scale(1.1);
   padding: 0.6em 2em;
   border: none;
   outline: none;
-  color: rgb(255, 255, 255);
+  color: rgb(26, 24, 24);
   background: #10d9c8;
   cursor: pointer;
   position: relative;
@@ -399,6 +408,10 @@ transform: scale(1.1);
     font-size: 30;
     font-style:initial;
     color: rgba(27, 44, 27, 0.966);
+    
+}
+.bn5 a{
+text-decoration:double;
 }
 
 @keyframes glowingbn5 {
