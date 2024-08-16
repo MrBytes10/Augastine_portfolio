@@ -16,14 +16,19 @@ function opentab(tabname) {
 }
 
 
-
+//menu opening on smalll screens
 var sidemenu = document.getElementById("sidemenu");
 function openmenu() {
-    sidemenu.style.right = "0";
+    sidemenu.style.right = "0"; // Slide the menu into view
 }
+
 function closemenu() {
-    sidemenu.style.right = "-200px";
+    sidemenu.style.right = "-200px"; // Slide the menu out of view
 }
+
+
+
+
 //calculating words in the textArea
 /*
 const textArea = document.querySelector('textarea'); // textarea or input
