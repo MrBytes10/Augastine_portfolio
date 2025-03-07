@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Augastine Ndeti Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <script src="https://kit.fontawesome.com/8a6f673640.js" crossorigin="anonymous"></script>
 </head>
 
@@ -13,62 +16,91 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/myLogo4.png" class="logo" alt="Augastine's logo">
+                <img src="images/MYlogo5.JPG" class="logo" alt="Augastine's logo"> <!-- mmm-->
                 <ul id="sidemenu">
                     <li> <a href="#header">Home</a> </li>
-                    <li> <a href="#about">About</a> </li>
+                    <li> <a href="#about">Summary</a> </li>
                     <li> <a href="#services">Services</a> </li>
-                    <li> <a href="#portfolio">Portfolio</a> </li>
+                    <li> <a href="#My_Projects"> Work-Samples</a> </li>
                     <li> <a href="#contact">Contact</a> </li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i> <!--- an icon for Closing---->
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"> </i> <!--- an icon for Closing---->
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i> <!--a Icon for menu-->
+                <i class="fa-solid fa-bars" onclick="openmenu()"> </i> <!-- Hamburger Icon for menu-->
             </nav>
             <div class="header-text">
-                <p>Technology & Business Consultant</p>
-                <h1>Greetings! I am <span>Augastine Ndeti</span>, a competent professional <br> with expertise in
-                    Web Development, Data Science, Technical Support and Business Development.</h1>
+                <h1>IT & Business Solutions Architect</h1>
+                <p>Greetings! I am <span>Augastine Ndeti</span>, a competent professional <br> with expertise in
+                    Web Development, Data Science, Technical Support and Business Development.</p>
             </div>
         </div>
     </div>
-    <!-------the About section starts below-->
+    <!--the About section starts below-->
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/At Office Screens.jpg" size="" alt="my photo at office">
+                    <img src="images/Augastine-dp-specs.JPG" size="" alt="my photo at office">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title"> About Me</h1>
+                    <h2 class="sub-title"> Professional Summary</h2>
                     <p>
-                        I am a self-driven expert with strong time management and collaboration abilities, seeking a
-                        role to apply my expertise in either my Technical or Non-technical skills (or both). I am a
-                        creative writer and skilled content researcher with a meticulous eye for detail.
-                        My skills include Front-end Development (HTML, CSS, JavaScript, React), SQL, technical writing,
-                        and more. My passion lies in creating innovative solutions, and I confidently tackle problems
-                        through a positive can-do attitude. I am always willing to expand what I already know, and also
-                        learn new skills where necessary. I value pushing technological advancements through dynamic
-                        interactions with computer systems to shape the future of technology and business.
+                        I am a skilled professional in Web Development, Data Science,
+                        Technical Support, and Business Development. I specialize in creating efficient websites,
+                        insightful data analysis, and strategic business growth. As an AI Adoption Specialist, I help
+                        businesses leverage AI for improved efficiency. Dedicated to delivering high-quality work, I am
+                        committed to meeting the evolving needs of the tech and business world.
                     </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('my_certs')">My Certifications</p>
                     </div>
                     <!--content For the skills part below-->
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Web Development</span> <br>Quality Personal and Business Websites Development
+                            <li><span>Web Development</span> <br>Quality Personal and Business Websites Development.
+                                I am a web developer proficient in technologies such as Python (Django), JavaScript
+                                (React.js & Next.js), SQL, RESTful APIs, HTML, CSS, and Bootstrap. I have experience in
+                                designing and
+                                developing end-to-end web applications, with a strong focus on building scalable and
+                                efficient software solutions.
                             </li>
-                            <li><span>UI/UX</span> <br> Designing Web/App interfaces</li>
-                            <li><span>Technical Writing</span> <br> Writing all types of papers and presentations</li>
+                            <li><span>Data Science</span> <br> I am an experienced Data Scientist with a strong
+                                background in statistical modeling, web scraping, and data mining. I am skilled in
+                                Python, SQL, and data visualization tools. I love extracting insights from complex
+                                datasets and communicate findings effectively to stakeholders. My passion lies in
+                                leveraging data to drive business decisions and solve real-world problems.</li>
+
+                            <li><span>Business Development</span> <br> I am an experienced Business Development Manager
+                                skilled in driving sales growth, improving processes, and ensuring customer
+                                satisfaction. I excel in CRM tools, strategic planning, project management, market
+                                research, lead generation, and building strong client relationships, with the ability to
+                                work independently or as part of a team..</li>
+
+                            <li><span>Technical Writing</span> <br> I am proficient in writing all types of papers and
+                                presentations i.e Essays, Case studies, Articles, BlogPosts, Dissertations,Reviews,
+                                Reports, Research papers, and more.
+                            </li>
                         </ul>
                     </div>
 
                     <!--content For the Experience part below-->
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>May 2023-Present</span> <br> Business Development Manager at Ngeni LABs LTD
+                            <li><span> <b>June 2023-June 2024</span> <br> Software Developer at Swiftplay</b>
+                            </li>
+                            <p>
+                                <li>❄ Designed and developed the backend of an e-commerce platform using Django and
+                                    SQLite.</li>
+                                <li>❄ Developed and maintained web applications using Python, JavaScript, and SQL.</li>
+                                <li>❄ Integrated third-party APIs and libraries for enhanced functionality.</li>
+                                <li>❄ Participated in the entire software development life cycle, from requirements
+                                    gathering to deployment.</li>
+                            </p>
+
+
+                            <li><span><b>May 2023-Present</span> <br> Business Development Manager at Ngeni LABs LTD</b>
                             </li>
                             <p>
                                 <li>🚀Optimized internal lead generation process by 20%, resulting in a 15% increase in
@@ -82,9 +114,17 @@
                                     communication.</li>
                             </p>
 
-                            <li><span>November 2021-April 2023</span> <br>Technical Freelance Writer at Writerbay.com,
-                                Coursehero.com, and EssayPro.com</li>
+                            <li><span><b>November 2021-April 2023</span> <br> Full-Stack Developer & Tech Writer at
+                                CourseHero, Writerbay,and EssayPro.com</b> </li>
                             <p>
+                                <li>🧿 Conducted research and analysis on various topics related to Python programming
+                                    and web development.</li>
+                                <li>🧿 Managed multiple projects simultaneously while meeting deadlines and ensuring
+                                    accuracy.</li>
+                                <li>🧿 Communicated effectively with clients to understand their needs and deliver
+                                    high-quality work on time.</li>
+                                <li>🧿 Conducted code reviews and testing to ensure high-quality deliverables.</li>
+
                                 <li>🧿Conducted research and analysis on various topics related to Python programming
                                     and
                                     web development.</li>
@@ -97,10 +137,18 @@
                                     accuracy.</li>
                             </p>
 
-                            <li><span>May 2021 - Oct 2021</span> <br> I.T. Support Officer-Intern at Makueni County
-                                Government, Wote, Kenya</li>
+                            <li><span> <b>May 2021 - Oct 2021</span> <br> FrontEnd Developer-Intern at Makueni County
+                                Government, Wote, Kenya </b> </li>
                             <p>
                             <ul>
+                                <li>⭕ Developed responsive UIs using HTML, CSS, JavaScript.</li>
+                                <li>
+                                    ⭕ Collaborated with designers on UI implementation.</li>
+                                <li>⭕ Optimized the County services website performance, leading to 15% faster load
+                                    times.</li>
+                                <li>⭕ Contributed to reusable UI component libraries.</li>
+                                <li>⭕ Participated in code reviews and ensured best practices.</li>
+
                                 <li>⭕Provided technical support for County computers, networks, and software.</li>
                                 <li>⭕Optimized network infrastructure by identifying and resolving network bottlenecks,
                                     leading to a 10% improvement in network performance.</li>
@@ -122,11 +170,36 @@
                                 Attained Second Class Honors, Upper Division.</li>
                             <li><span>2013 - 2016</span> <br> Attained the Kenya Certificate of Secondary Education
                                 (KCSE), from Kitheuni Secondary School</li>
-                            <li><span>2004 - 2012</span> <br> Attained the Kenya Certificate of Primary Education
-                                (KCPE), from Mwambathaana Primary
-                                School</li>
+
                         </ul>
                     </div>
+                    <!--content For the other_certs part below-->
+                    <div class="tab-contents" id="my_certs">
+                        <ul>
+                            <li><span>My Cerfications</span> <br></li>
+                            <li>👨‍🎓 BSc. Computer Science -<a
+                                    href="https://drive.google.com/file/d/1EggXKr_bb5wTYarW-9RYNIDfZwKWj3_R/view?usp=sharing"
+                                    target="_blank">Rongo University </a></li>
+                            <li>👨‍🎓 Data Science with Python -<a
+                                    href="https://drive.google.com/file/d/1nly3814eJniPNBE5CA2yBBbEBVEYrcSR/view?usp=sharing"
+                                    target="_blank">SimpliLearn </a></li>
+                            <li>👨‍🎓 Python Programming - <a
+                                    href="https://drive.google.com/file/d/1A4Ybw2WxCfOWack0c36sgZhnSO0BJnzV/view?usp=sharing"
+                                    target="_blank">SimpliLearn </a></li>
+                            <li>👨‍🎓 ReactJS for Beginners - <a
+                                    href="https://drive.google.com/file/d/1xxbUY35rrgY9ulmALZlwDCnWd3u6BN3J/view?usp=sharing"
+                                    target="_blank">SimpliLearn </a></li>
+                            <li>👨 JavaScript Programming - <a
+                                    href="https://drive.google.com/file/d/1k6DDUY-OoaKyOR6WClKjnBDBPCv5d6Kr/view?usp=sharing"
+                                    target="_blank">SimpliLearn </a></li>
+                            <li>👨‍🎓 Web Development - <a
+                                    href="https://drive.google.com/file/d/1gU2hdR7XbqStIOZ7_UgEei9ZuAhC8FnQ/view?usp=sharing"
+                                    target="_blank">SoloLearn </a></li>
+
+                        </ul>
+                    </div>
+
+                    <!-- End of tabs for skills, experience, education, and other certs-->
                 </div>
             </div>
         </div>
@@ -142,22 +215,30 @@
                     <i class="fa-sharp fa-solid fa-code"></i>
                     <h2>Web Development</h2>
                     <p>
-                        Experienced in building responsive and dynamic websites using HTML, CSS, JavaScript, and popular
-                        frameworks like React and WordPress. Skilled in developing custom themes, integrating APIs, and
-                        optimizing for performance and SEO. Proficient in Git for version control and collaborative
-                        development.
+                        Experienced in building responsive and dynamic websites using HTML, CSS, JavaScript,Python and
+                        popular frameworks like React.js, Next.js, Django and WordPress. Skilled in developing custom
+                        themes, integrating APIs, and optimizing for performance and SEO. Proficient in Git for version
+                        control and collaborative development.
                     </p> <!--description of the service 1-->
-                    <a href="#">Learn More</a>
+                    <a href="https://drive.google.com/file/d/1gdBWDph8a1PXGmnNxeXsi3NQHZn57tkm/view?usp=sharing"
+                        target="_blank"> Learn
+                        More </a>
                 </div> <!--my service one ends here-->
+
                 <div>
-                    <i class="fa-solid fa-pen-nib"></i>
-                    <h2>UI/UX Design</h2>
-                    <p> Proficient in designing intuitive and visually appealing user interfaces using Adobe Creative
-                        Suite. Skilled in wireframing, prototyping, and conducting user testing to ensure optimal
-                        usability. Experienced in creating responsive designs that adapt seamlessly across various
-                        devices and screen sizes.</p> <!--description of the service 2-->
-                    <a href="#">Learn More</a>
-                </div> <!--my service 2 ends here-->
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h2>Data Analysis and Automation</h2>
+                    <p>
+                        I develop Python applications for automation, data analysis, machine learning models, scraping
+                        data, building APIs, and more. Handles coding projects end-to-end.
+                    </p>
+                    <!--description of the service 2-->
+                    <a href="https://drive.google.com/file/d/1Hf_TA42zAL2mEc61GbADGJDBpU3Nx2lr/view?usp=sharing"
+                        target="_blank"> Learn
+                        More </a>
+                </div>
+
+                <!--my service 2 ends here-->
 
                 <div>
                     <i class="fa-solid fa-file-word"></i>
@@ -168,17 +249,19 @@
                         I'm experienced in breaking down complex concepts into easily understandable content for both
                         technical and non-technical audiences.
                     </p> <!--description of the service 3-->
-                    <a href="#">Learn More</a>
+                    <a href="#" target="_blank">Learn More</a>
                 </div> <!--my service 3 ends here-->
 
                 <div> <!-- service 4 starts with the div below-->
                     <i class="fa-solid fa-city"></i>
-                    <h2>Business Development</h2>
+                    <h2>Business Development Consultancy</h2>
                     <p>
-                        Growth focused. Specializes in platforms like LinkedIn to establish connections, identify leads
-                        through research and networking. Support website traffic growth.
+                        I'm Growth focused. Specializes in platforms like LinkedIn, Facebook, Twitter, Instagram, and
+                        TikTok to establish connections, identify leads
+                        through research and networking. Also I do help in website traffic growth.
                     </p> <!--description of the service 4-->
-                    <a href="#">Learn More</a>
+                    <a href="https://drive.google.com/file/d/1-qSgxDZXNZQ9WFPm1Vhqv7RCSikwhIUM/view?usp=sharing"
+                        target="_blank"> Learn More </a>
                 </div>
                 <!--my service four ends here-->
 
@@ -189,92 +272,382 @@
                     <p>
                         The key focus is on leveraging expertise in current AI tools and solutions to analyze a
                         business' needs and processes in order to recommend where and how AI can be adopted or
-                        implemented to maximize efficiency, productivity, cost savings etc.
-
-                        An AI solutions consultant or strategist takes a high-level view to identify opportunities. An
-                        implementation specialist or capability assessor looks more at tactical feasibility. And an AI
-                        project manager or transformation lead focuses on driving adoption operationally. But
-                        essentially it's an AI expert guiding businesses on where and how they can benefit from
+                        implemented to maximize efficiency, productivity, cost savings etc. It's an AI expert that
+                        guides businesses on where and how they can benefit from
                         artificial intelligence.
                     </p> <!--description of the service 5-->
-                    <a href="#">Learn More</a>
+                    <a href="#" target="_blank">Learn More</a>
                 </div>
                 <!--my service five ends here-->
 
                 <!-- service 6 starts with the div below-->
                 <div>
-                    <i class="fa-solid fa-magnifying-glass-chart"></i>
-                    <h2>Automation & Data Analytics</h2>
-                    <p>
-                        I develop Python applications for automation, data analysis, machine learning models, scraping
-                        data, building APIs, and more. Handles coding projects end-to-end.
-                    </p> <!--description of the service 6-->
-                    <a href="#">Learn More</a>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>UI/UX Design</h2>
+                    <p> Proficient in designing intuitive and visually appealing user interfaces using Adobe Creative
+                        Suite. Skilled in wireframing, prototyping, and conducting user testing to ensure optimal
+                        usability. Experienced in creating responsive designs that adapt seamlessly across various
+                        devices and screen sizes.</p> <!--description of the service 2-->
+                    <a href="#" target="_blank">Learn More</a>
                 </div>
                 <!--my service six ends here-->
             </div>
         </div>
     </div>
 
-    <!-- -----the Portfolio Section starts below--------------------------- -->
-    <div id="portfolio">
+    <!-- -----the My_Projects Section starts below--------------------------- -->
+    <section class="projectsSection">
+        <div id="My_Projects">
+            <div class="container">
+                <h1 class="sub-title">My Work Samples</h1>
+                <div class="work-list">
+                    <!--work sample 1 below-->
+                    <div class="work">
+                        <img src="images/webbb desssign.png">
+                        <div class="layer">
+                            <h3>E-commerce Site</h3>
+                            <p>
+                                Designed and developed an e-commerce website for a client using HTML, CSS, JavaScript
+                                and
+                                React. Implemented payment integration, product catalog and shopping cart functionality.
+                            </p>
+                            <a href="#" target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                            <!--No text in this link, just an icon from fontawesome-->
+
+                        </div>
+                    </div>
+
+
+                    <!--work sample 3 below-->
+                    <div class="work">
+                        <img src="images/googstock.png" />
+                        <div class="layer">
+                            <h3>Google Stocks Price Trend Prediction</h3>
+                            <p>
+                                Built a Google Stocks Prediction model using python's Data
+                                Science librarie. Focused on creating insigts and data-driven
+                                decision to showcase my work and skills.
+                            </p>
+                            <a href="https://github.com/MrBytes10/DataScience_GOOG-StockPrice-Prediction/blob/main/GOOGLE-StockPrice-Prediction.ipynb "
+                                target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <!--No text in this link, just an icon from fontawesome-->
+                        </div>
+                    </div>
+
+                    <!--work sample 9 below-->
+                    <div class="work">
+                        <img src="images/expense-tracker-webApp.jpg" />
+                        <div class="layer">
+                            <h3>Your Expenses Tracker</h3>
+                            <p>A simple and intuitive expense-tracking application built with React.js.</p>
+                            <a href="https://your-expenses-tracker-in-reactjs.vercel.app" target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <!--No text in this link, just an icon from fontawesome-->
+                        </div>
+                    </div>
+
+                    <!--work sample 9.1 below-->
+                    <div class="work">
+                        <img src="images/bmicalculator_DjangoAndReact.jpg" />
+                        <div class="layer">
+                            <h3>BMI Calculator WebApp</h3>
+                            <p>This is a simple BMI (Body Mass Index) Calculator built using React. The application
+                                allows
+                                users to
+                                input their height and weight, and then calculates and displays their BMI along with a
+                                message indicating
+                                the BMI category.</p>
+                            <a href="https://bmi-calculator-augastine-ndetis-projects.vercel.app/" target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <!--No text in this link, just an icon from fontawesome-->
+                        </div>
+                    </div>
+                    <!--work sample 9.2 below-->
+                    <div class="work">
+                        <img src="images/event_management_projectt.png" />
+                        <div class="layer">
+                            <h3>Event Management System</h3>
+                            <p>An Event Management System built with Django and JavaScript, designed to streamline the
+                                organization and
+                                management of events.</p>
+                            <a href="https://github.com/MrBytes10/event-management-system-Django-and-Js"
+                                target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <!--No text in this link, just an icon from fontawesome-->
+                        </div>
+                    </div>
+                    <!--work sample 9.3 below-->
+                    <div class="work">
+                        <img src="images/voting-webApp.jpg" />
+                        <div class="layer">
+                            <h3>Voting Web App with Charts</h3>
+                            <p>This Web Application built in python(Django) allows users to participate in polls and
+                                visualize results
+                                with interactive charts.</p>
+                            <a href="https://github.com/MrBytes10/django-voting-webApp-with-charts" target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <!--No text in this link, just an icon from fontawesome-->
+                        </div>
+                    </div>
+
+
+                    <!--work sample 3.2 below-->
+                    <div class="work">
+                        <img src="images/hospitalInsuranceDS.png" />
+                        <div class="layer">
+                            <h3>
+                                Medical Insurance Expenses Prediction Using Machine Learning
+                                (Python)
+                            </h3>
+                            <p>
+                                This is a data science project for medical insurance that
+                                promises to help financially in case of any medical emergency.
+                            </p>
+                            <a href=" https://github.com/MrBytes10/medical_InsurancePricePrediction/blob/main/medical_InsurancePricePrediction.ipynb"
+                                target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <!--No text in this link, just an icon from fontawesome-->
+                        </div>
+                    </div>
+
+                    <!--work sample 3.3 below-->
+                    <div class="work">
+                        <img src="images/WEB1scraper.jpg" />
+                        <div class="layer">
+                            <h3>Email Scraper Using Selenium in Python</h3>
+                            <p>
+                                This project automates the process of opening a web page,
+                                locating all email addresses within the page source, and
+                                printing them to the console for you to copy.
+                            </p>
+                            <a href=" https://github.com/MrBytes10/email-Scraper-Using-Selenium-in-Python/blob/main/emailScraperUsingSelenium.py"
+                                target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <!--No text in this link, just an icon from fontawesome-->
+                        </div>
+                    </div>
+
+                    <!--work sample 3.4 below-->
+                    <div class="work">
+                        <img src="images/dogecoinPred.png" />
+                        <div class="layer">
+                            <h3>Dogecoin Price Prediction with Machine Learning</h3>
+                            <p>
+                                This project implements a machine learning model to predict the
+                                price pattern and forecast the future price of Dogecoin, a
+                                popular cryptocurrency.
+                            </p>
+                            <a href=" https://github.com/MrBytes10/dogeCoin-Prediction--Data-Science/blob/main/dogeCoinPricePrediction.ipynb "
+                                target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <!--No text in this link, just an icon from fontawesome-->
+                        </div>
+                    </div>
+
+                    <!--work sample 3.5 below-->
+                    <div class="work">
+                        <img src="images/proxycurlScraper.png" />
+                        <div class="layer">
+                            <h3>LinkedIn Leads Scraper in Anonymous Version</h3>
+                            <p>
+                                A LinkedIn Scraper dedicated to scraping company leads
+                                anonymously and saving their e-mail addresses if available!
+                            </p>
+                            <a href=" https://github.com/MrBytes10/linkedIn_Emails_Scraper-using-ProxyCurl-API/blob/main/LinkedIn_Scraper.py "
+                                target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <!--No text in this link, just an icon from fontawesome-->
+                        </div>
+                    </div>
+
+                    <!--work sample 7.1 below-->
+                    <div class="work">
+                        <img src="images/tukoNewsNEEWWW.jpg" />
+                        <div class="layer">
+                            <h3>Tuko Latest News Scraping</h3>
+                            <p>This Python script scrapes news articles from the Tuko.co.ke website and saves them to an
+                                Excel file..
+                            </p>
+                            <a href="https://github.com/MrBytes10/Tuko-News-Website-Scraper-for-Latest-News/blob/main/tuko_scraper.py"
+                                target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <!--No text in this link, just an icon from fontawesome-->
+                        </div>
+                    </div>
+
+                    <!--work sample 8 below-->
+                    <div class="work">
+                        <img src="images/tradingView5Indicators.jpg" />
+                        <div class="layer">
+                            <h3>TradingView Indicators for Forex Trading</h3>
+                            <p>This project displays two TradingView stock charts for AMEX:BTTR, one with a 4-hour
+                                interval
+                                and the
+                                other with a daily interval.</p>
+                            <a href="https://trading-view-indicators-project-forex-trading.vercel.app/" target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <!--No text in this link, just an icon from fontawesome-->
+                        </div>
+                    </div>
+
+                    <!--Work samples end here -->
+
+
+
+                    <!-- Work Samples for page 1 end here-->
+
+                </div>
+                <a href="work-samples.html" name="more-work-samples" id="more-work-samples" target="_blank"><button
+                        class="bn632-hover bn23">See All Projects</button></a>
+                <!-- How to link to the external page with samples:
+                <a href="somewhere. html" name="linktome" id="linktome" target="_blank">Go Somewhere</a>
+            -->
+            </div>
+        </div>
+    </section>
+
+    <!--Testimonials Section-->
+    <section class="testimonials" id="testimonials-section">
         <div class="container">
-            <h1 class="sub-title">My Work Samples</h1>
-            <div class="work-list">
-                <!--work sample 1 below-->
-                <div class="work">
-                    <img src="images/webbb desssign.png">
-                    <div class="layer">
-                        <h3>E-commerce Site</h3>
-                        <p>
-                            Designed and developed an e-commerce website for a client using HTML, CSS, JavaScript and
-                            React. Implemented payment integration, product catalog and shopping cart functionality.
-                        </p>
-                        <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
-                        <!--No text in this link, just an icon from fontawesome-->
+
+            <div class="section-header">
+                <h2 class="title"> Client Testimonials </h2>
+            </div>
+
+            <div class="testimonials-content">
+                <div class="swiper testimonials-slider js-testimonials-slider">
+
+                    <div class="swiper-wrapper">
+                        <!--Client 1-->
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                                <img src="images/james1.jpg" alt="client1 testimonial">
+                                <div class="text-box">
+                                    <h3 class="name">Charles Taylor</h3>
+                                    <span class="job">Entrepreneur</span>
+                                </div>
+                            </div>
+                            <div class="clientComment">
+                                <p>
+                                    "I couldn't be happier with the website Mulu created for my startup. His ability to
+                                    blend
+                                    design and functionality has helped me establish a strong online presence. Mulu's
+                                    dedication and skill have been instrumental to our success."
+                                </p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <!-- Client 2-->
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                                <img src="images/karolina.jpg" alt="client2 testimonial">
+                                <div class="text-box">
+                                    <h3 class="name">Linda Moore</h3>
+                                    <span class="job">Content Creator
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="clientComment">
+                                <p>
+                                    "Augastine was fantastic to work with. He took my content and created a website that
+                                    truly
+                                    showcases it in the best light. His responsiveness and willingness to incorporate my
+                                    feedback made the whole process seamless. I'm thrilled with the results!"
+                                </p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <!--Client 3-->
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                                <img src="images/lucy1.jpg" alt="client3 testimonial">
+                                <div class="text-box">
+                                    <h3 class="name">Jessica K.</h3>
+                                    <span class="job">Non-Profit Director</span>
+                                </div>
+                            </div>
+                            <div class="clientComment">
+                                <p>
+                                    Thanks to Augastine, our Non-Profit Organization's online presence is now both
+                                    engaging
+                                    and effective. He approached our project with sensitivity and a genuine
+                                    understanding of
+                                    our mission. His expertise has helped us reach a broader audience and enhance
+                                    our
+                                    impact."
+                                </p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <!--Client 4-->
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                                <img src="images/kelly.jpg" alt="client4 testimonial">
+                                <div class="text-box">
+                                    <h3 class="name">Okelo Williams</h3>
+                                    <span class="job">Startup Founder</span>
+                                </div>
+                            </div>
+                            <div class="clientComment">
+                                <p>
+                                    "We were impressed by Augastine's ability to turn our rough ideas into a
+                                    polished,
+                                    functional site. His technical acumen, particularly in Django and
+                                    React.js, brought our application to a new level of efficiency and performance.
+                                    I
+                                    wouldn't hesitate to work with him again."
+                                </p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <!--Client 5-->
 
                     </div>
-                </div>
-
-                <!--work sample 2 below-->
-                <div class="work">
-                    <img src="images/programmer-code shown.png">
-                    <div class="layer">
-                        <h3>A Portfolio Website</h3>
-                        <p>
-                            Built my portfolio website using React,JavaScript, HTML, and CSS. Focused on creating a
-                            responsive,modern design to showcase my work and skills.
-                        </p>
-                        <a href="https://augastine-s-portfolio.vercel.app/" target="_blank"> <i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <!--No text in this link, just an icon from fontawesome-->
-
+                    <!--End of testimonials swiper wrapper-->
+                    <div
+                        class="swiper-pagination js-testimonials-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+                        <span class="swiper-pagination-bullet" tabindex="0" role="button"
+                            aria-label="Go to slide 1"></span><span
+                            class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
+                            aria-label="Go to slide 2" aria-current="true"></span><span class="swiper-pagination-bullet"
+                            tabindex="0" role="button" aria-label="Go to slide 3"></span><span
+                            class="swiper-pagination-bullet" tabindex="0" role="button"
+                            aria-label="Go to slide 4"></span>
                     </div>
-                </div>
 
-                <!--work sample 3 is shown below-->
-                <div class="work">
-                    <img src="images/writing presentation-1794128_1280.png">
-                    <div class="layer">
-                        <h3>A Technical Research Paper on Honeypots in Cybersecurity</h3>
-                        <p>
-                            Researched and wrote a report on honeypots and their role in network security. Covered
-                            functionality, common deployment scenarios and analyzed real-world use cases.
-                        </p>
-                        <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
-                        <!--No text in this link, just an icon from fontawesome-->
-
-                    </div>
                 </div>
 
             </div>
-            <a href="work-samples.html" name="more-work-samples" id="more-work-samples" target="_blank"><button
-                    class="bn632-hover bn23">See More Samples</button></a>
-            <!-- How to link to the external page with samples:
-                <a href="somewhere. html" name="linktome" id="linktome" target="_blank">Go Somewhere</a>
-            -->
         </div>
-    </div>
+    </section>
+    <!--Testimonials Section ends here-->
 
     <!--Contact section starts below-->
     <div id="contact">
@@ -282,7 +655,7 @@
             <div class="row">
                 <div class="contact-left"> <!--here we shall have my contact details plus social media handles-->
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-regular fa-envelope"></i>mulu.bytes@gmail.com</p>
+                    <p><i class="fa-regular fa-envelope"></i>a.m.ndeti@gmail.com</p>
                     <p><i class="fa-solid fa-square-phone-flip"></i>+254 742125032</p>
 
                     <p class="connectWithMe">Connect with me on all platforms below:</p>
@@ -290,14 +663,13 @@
                         <a href="https://www.linkedin.com/in/augastine-ndeti-290230175?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BwZ6ut2hySHGJYPyJsjdf2A%3D%3D"
                             target="blank">
                             <i class="fa-brands fa-linkedin"></i> </a>
-                        <a href="https://twitter.com/AugastineNdeti" target="blank"><i
+                        <a href="https://twitter.com/mulu_tx" target="blank"><i
                                 class="fa-brands fa-square-x-twitter"></i></a>
-                        <a href="https://www.facebook.com/augastine.ndeti.3" target="_blank"><i
+                        <a href="https://www.facebook.com/mulu.tx/" target="_blank"><i
                                 class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/ndetiaugastino/" target="_blank"><i
+                        <a href="https://www.instagram.com/mulu_tx/" target="_blank"><i
                                 class="fa-brands fa-instagram"></i></a>
-                        <a href="https://github.com/Birkofniki" target="_blank"><i
-                                class="fa-brands fa-square-github"></i></a>
+                        <a href="https://github.com/" target="_blank"><i class="fa-brands fa-square-github"></i></a>
                         <a href="https://discordapp.com/users/961452033288843284" target="_blank"><i
                                 class="fa-brands fa-discord"></i> </a>
                         <a href="https://www.tiktok.com/@mr.bytes10?is_from_webapp=1&sender_device=pc"
@@ -308,8 +680,12 @@
                                 style="width: 22px; height: 22px; padding: 0px; margin: 0px;" /></a>
                         </p>
                     </div>
-                    <a href="images/@Augastine Ndeti Resume latest.pdf" download class="bn5"> <i
+                    <!-- <a href="images/@Augastine Ndeti Resume latest.pdf" download class="bn5"> <i
                             class="fa-solid fa-cloud-arrow-down"></i>Download my Resume/CV</a>
+                            -->
+                    <a href="https://wa.me/+254742125032" target="_blank" class="bn5">
+                        <i class="fa-brands fa-square-whatsapp"></i> Click to chat me on WhatsApp </a>
+                    <!-- Replaced my CV here-->
                 </div>
 
                 <div class="contact-right">
@@ -348,6 +724,42 @@
 
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        //testimonials js
+        const swiper = new Swiper('.js-testimonials-slider', {
+            grabCursor: true,
+            spaceBetween: 30,
+            loop: true, // Enables continuous loop mode
+            autoplay: {
+                delay: 10000, // 10 seconds delay
+                disableOnInteraction: false, // Allows autoplay even after user interaction
+            },
+            pagination: {
+                el: '.js-testimonials-pagination',
+                clickable: true,
+            },
+            slidesPerView: 1, // Shows one slide at a time by default
+
+            breakpoints: {
+                767: {
+                    slidesPerView: 2, // Show 2 slides on screens larger than 767px
+                },
+                1024: {
+                    slidesPerView: 3, // Show 3 slides on screens larger than 1024px
+                }
+            },
+
+            // Enable slide transition effect
+            effect: 'slide', // Slide transition effect
+            speed: 800, // Transition speed (in milliseconds)
+        });
+
+        //end of testimonials js
+    </script>
+
+
 </body>
 
 </html>
